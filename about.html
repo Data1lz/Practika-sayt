@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShield - Про нас</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Навігація (така ж як на інших сторінках) -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">TechShield</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Головна</a>
+                <a href="services.html" class="hover:text-gray-300">Послуги</a>
+                <a href="about.html" class="hover:text-gray-300">Про нас</a>
+                <a href="contacts.html" class="hover:text-gray-300">Контакти</a>
+            </div>
+            <div class="space-x-2">
+                <button onclick="openLoginModal()" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">Увійти</button>
+                <button onclick="openRegisterModal()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Реєстрація</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-8">Про нас</h1>
+            
+            <!-- Про компанію -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                <h2 class="text-2xl font-bold mb-4">Наша історія</h2>
+                <p class="text-gray-600 mb-4">
+                    TechShield - це команда професіоналів, які спеціалізуються на ремонті та обслуговуванні електронних пристроїв. 
+                    Ми працюємо на ринку України з 2015 року та постійно розвиваємося, впроваджуючи нові технології та підвищуючи 
+                    якість наших послуг.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    Наша мета - забезпечити найвищий рівень захисту та обслуговування для вашої техніки, використовуючи 
+                    тільки якісні матеріали та сучасне обладнання.
+                </p>
+            </section>
+
+            <!-- Наші переваги -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Досвід</h3>
+                    <p class="text-gray-600">Більше 8 років на ринку України</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Якість</h3>
+                    <p class="text-gray-600">Використовуємо тільки оригінальні матеріали</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Гарантія</h3>
+                    <p class="text-gray-600">Надаємо гарантію на всі види робіт</p>
+                </div>
+            </section>
+
+            <!-- Наша команда -->
+            <section class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-6">Наша команда</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="/api/placeholder/150/150" alt="Фото співробітника" class="rounded-full mx-auto mb-4">
+                        <h3 class="font-bold mb-2">Олександр Петренко</h3>
+                        <p class="text-gray-600">Керівник сервісного центру</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/api/placeholder/150/150" alt="Фото співробітника" class="rounded-full mx-auto mb-4">
+                        <h3 class="font-bold mb-2">Марія Ковальчук</h3>
+                        <p class="text-gray-600">Старший майстер</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/api/placeholder/150/150" alt="Фото співробітника" class="rounded-full mx-auto mb-4">
+                        <h3 class="font-bold mb-2">Іван Мельник</h3>
+                        <p class="text-gray-600">Спеціаліст з ремонту</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер (такий же як на інших сторінках) -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Контакти</h4>
+                    <p>Телефон: +380 XX XXX XX XX</p>
+                    <p>Email: info@techshield.ua</p>
+                    <p>Адреса: м. Київ, вул. Прикладна, 123</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Графік роботи</h4>
+                    <p>Пн-Пт: 9:00 - 20:00</p>
+                    <p>Сб: 10:00 - 18:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Слідкуйте за нами</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Instagram</a>
+                        
