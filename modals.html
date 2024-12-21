@@ -1,68 +1,52 @@
-<!-- Модальне вікно входу -->
-<div id="loginModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal('loginModal')">&times;</span>
-        <h2 class="text-2xl font-bold mb-4">Вхід</h2>
-        <form onsubmit="handleLogin(event)" class="space-y-4">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід та реєстрація</title>
+</head>
+<body>
+    <!-- Модальне вікно входу -->
+    <div id="loginModal">
+        <h2>Вхід</h2>
+        <form action="auth.php" method="POST">
+            <input type="hidden" name="action" value="login">
             <div>
-                <label class="block text-gray-700 mb-2">Email</label>
-                <input type="email" id="loginEmail" class="w-full p-2 border rounded" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
             </div>
             <div>
-                <label class="block text-gray-700 mb-2">Пароль</label>
-                <input type="password" id="loginPassword" class="w-full p-2 border rounded" required>
+                <label>Пароль:</label>
+                <input type="password" name="password" required>
             </div>
-            <div class="flex items-center justify-between">
-                <label class="flex items-center">
-                    <input type="checkbox" class="mr-2">
-                    <span class="text-sm">Запам'ятати мене</span>
-                </label>
-                <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Забули пароль?</a>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500">
-                Увійти
-            </button>
+            <button type="submit">Увійти</button>
         </form>
-        <p class="text-center mt-4 text-sm text-gray-600">
-            Немає акаунту? 
-            <a href="#" onclick="closeModal('loginModal'); openRegisterModal()" class="text-blue-600 hover:text-blue-500">
-                Зареєструватися
-            </a>
-        </p>
     </div>
-</div>
 
-<!-- Модальне вікно реєстрації -->
-<div id="registerModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal('registerModal')">&times;</span>
-        <h2 class="text-2xl font-bold mb-4">Реєстрація</h2>
-        <form onsubmit="handleRegister(event)" class="space-y-4">
+    <!-- Модальне вікно реєстрації -->
+    <div id="registerModal">
+        <h2>Реєстрація</h2>
+        <form action="auth.php" method="POST">
+            <input type="hidden" name="action" value="register">
             <div>
-                <label class="block text-gray-700 mb-2">Ім'я</label>
-                <input type="text" id="registerName" class="w-full p-2 border rounded" required>
+                <label>Ім'я:</label>
+                <input type="text" name="name" required>
             </div>
             <div>
-                <label class="block text-gray-700 mb-2">Email</label>
-                <input type="email" id="registerEmail" class="w-full p-2 border rounded" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
             </div>
             <div>
-                <label class="block text-gray-700 mb-2">Пароль</label>
-                <input type="password" id="registerPassword" class="w-full p-2 border rounded" required>
+                <label>Пароль:</label>
+                <input type="password" name="password" required>
             </div>
             <div>
-                <label class="block text-gray-700 mb-2">Підтвердження паролю</label>
-                <input type="password" id="registerConfirmPassword" class="w-full p-2 border rounded" required>
+                <label>Підтвердження паролю:</label>
+                <input type="password" name="confirmPassword" required>
             </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500">
-                Зареєструватися
-            </button>
+            <button type="submit">Зареєструватися</button>
         </form>
-        <p class="text-center mt-4 text-sm text-gray-600">
-            Вже маєте акаунт? 
-            <a href="#" onclick="closeModal('registerModal'); openLoginModal()" class="text-blue-600 hover:text-blue-500">
-                Увійти
-            </a>
-        </p>
     </div>
-</div>
+</body>
+</html>
+

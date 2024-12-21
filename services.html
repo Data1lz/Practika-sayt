@@ -6,82 +6,36 @@
     <title>Мобайл - Послуги</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
 </head>
-<body class="bg-gray-100">
-    <!-- Навігаційна панель (така ж як на головній) -->
     <nav class="bg-blue-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Мобайл</a>
+             <a href="index.html" class="text-2xl font-bold">Мобайл</a>
             <div class="space-x-4">
                 <a href="index.html" class="hover:text-gray-300">Головна</a>
                 <a href="services.html" class="hover:text-gray-300">Послуги</a>
                 <a href="about.html" class="hover:text-gray-300">Про нас</a>
                 <a href="contacts.html" class="hover:text-gray-300">Контакти</a>
             </div>
-            <div class="space-x-2">
-                <button onclick="openLoginModal()" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">Увійти</button>
-                <button onclick="openRegisterModal()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Реєстрація</button>
-            </div>
-        </div>
-    </nav>
+  <h1>Наші послуги</h1>
 
-    <main class="container mx-auto mt-8 p-4">
-        <h1 class="text-3xl font-bold mb-8">Наші послуги</h1>
-        
-        <!-- Список послуг -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Заміна захисного скла -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4">Заміна захисного скла</h2>
-                <p class="text-gray-600 mb-4">Професійна заміна захисного скла на смартфонах та планшетах. Використовуємо тільки якісні матеріали.</p>
-                <ul class="list-disc list-inside mb-4 text-gray-600">
-                    <li>Звичайне захисне скло - від 200 грн</li>
-                    <li>3D захисне скло - від 300 грн</li>
-                    <li>Privacy скло - від 400 грн</li>
-                </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Замовити</button>
-            </div>
+    <div class="service">
+        <h2>Заміна захисного скла</h2>
+        <p>Звичайне захисне скло - від 200 грн</p>
+        <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Заміна захисного скла: Звичайне захисне скло">
+            <button type="submit">Замовити</button>
+        </form>
+    </div>
 
-            <!-- Ремонт техніки -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4">Ремонт техніки</h2>
-                <p class="text-gray-600 mb-4">Діагностика та ремонт смартфонів, планшетів, ноутбуків та іншої електроніки.</p>
-                <ul class="list-disc list-inside mb-4 text-gray-600">
-                    <li>Діагностика - від 100 грн</li>
-                    <li>Заміна дисплея - від 800 грн</li>
-                    <li>Заміна батареї - від 500 грн</li>
-                </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Детальніше</button>
-            </div>
+    <div class="service">
+        <h2>Ремонт техніки</h2>
+        <p>Діагностика - від 100 грн</p>
+        <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Ремонт техніки: Діагностика">
+            <button type="submit">Замовити</button>
+        </form>
+    </div>
 
-            <!-- Продаж аксесуарів -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4">Аксесуари</h2>
-                <p class="text-gray-600 mb-4">Широкий вибір аксесуарів для мобільних пристроїв.</p>
-                <ul class="list-disc list-inside mb-4 text-gray-600">
-                    <li>Чохли - від 150 грн</li>
-                    <li>Зарядні пристрої - від 200 грн</li>
-                    <li>Навушники - від 300 грн</li>
-                </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">До каталогу</button>
-            </div>
-
-            <!-- Налаштування пристроїв -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4">Налаштування пристроїв</h2>
-                <p class="text-gray-600 mb-4">Допомога в налаштуванні та оптимізації роботи ваших пристроїв.</p>
-                <ul class="list-disc list-inside mb-4 text-gray-600">
-                    <li>Базове налаштування - 200 грн</li>
-                    <li>Оптимізація роботи - 300 грн</li>
-                    <li>Встановлення програм - від 100 грн</li>
-                </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Замовити</button>
-            </div>
-        </div>
-    </main>
-
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
