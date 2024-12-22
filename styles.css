@@ -199,3 +199,18 @@ footer .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+/* Зміна розміру фото в секції "Наша команда" */
+.nostra-komanda .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.nostra-komanda img {
+    width: 200px; /* Зменшений розмір */
+    height: 200px; /* Зменшений розмір */
+    object-fit: cover; /* Забезпечує правильну пропорцію зображення */
+    border-radius: 100%; /* Кругла форма */
+    margin: 0 auto 1rem; /* Центруємо зображення і додаємо відступ знизу */
+    border: 3px solid #e2e8f0; /* Легкий бордер для естетики */
+}
