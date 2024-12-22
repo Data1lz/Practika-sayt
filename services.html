@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мобайл - Послуги</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
 </head>
     <nav class="bg-blue-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
@@ -15,27 +16,109 @@
                 <a href="about.html" class="hover:text-gray-300">Про нас</a>
                 <a href="contacts.html" class="hover:text-gray-300">Контакти</a>
             </div>
-  <h1>Наші послуги</h1>
-
-    <div class="service">
-        <h2>Заміна захисного скла</h2>
-        <p>Звичайне захисне скло - від 200 грн</p>
-        <form action="orders.php" method="POST">
+<!-- Продукти -->
+<section class="bg-white p-8 rounded-lg shadow-lg mb-8">
+    <h2 class="text-2xl font-bold mb-6 text-center">Наші Продукти та Послуги</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Продукт: Телефон 1 -->
+        <div class="product-card">
+            <img src="/images2/S21.jpg" alt="Телефон 1" class="product-image">
+            <h3 class="product-title">Телефон Samsung Galaxy S21</h3>
+            <p class="product-description">Офіційно відновлений телефон. Гарний стан.</p>
+            <p class="product-price">₴15,000</p>
+         <form action="orders.php" method="POST">
             <input type="hidden" name="type" value="service">
-            <input type="hidden" name="details" value="Заміна захисного скла: Звичайне захисне скло">
+            <input type="hidden" name="details" value="Телефон Samsung Galaxy S21">
             <button type="submit">Замовити</button>
         </form>
-    </div>
-
-    <div class="service">
-        <h2>Ремонт техніки</h2>
-        <p>Діагностика - від 100 грн</p>
-        <form action="orders.php" method="POST">
+        </div>
+        <!-- Продукт: Телефон 2 -->
+        <div class="product-card">
+            <img src="/images2/iPhone_12.jpg" alt="Телефон 2" class="product-image">
+            <h3 class="product-title">iPhone 12</h3>
+            <p class="product-description">Відновлений iPhone, з гарантією.</p>
+            <p class="product-price">₴18,000</p>
+          <form action="orders.php" method="POST">
             <input type="hidden" name="type" value="service">
-            <input type="hidden" name="details" value="Ремонт техніки: Діагностика">
+            <input type="hidden" name="details" value="iPhone 12">
             <button type="submit">Замовити</button>
         </form>
+        </div>
+        <!-- Продукт: Чохол для телефону -->
+        <div class="product-card">
+            <img src="/images2/iPhone.jpg" alt="Чохол" class="product-image">
+            <h3 class="product-title">Чохол для iPhone 12</h3>
+            <p class="product-description">М'який чохол з силікону. Захищає від ударів.</p>
+            <p class="product-price">₴300</p>
+               <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Чохол для iPhone 12">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
+        <!-- Продукт: Захисне скло -->
+        <div class="product-card">
+            <img src="/images2/sklo.jpg" alt="Захисне скло" class="product-image">
+            <h3 class="product-title">Захисне скло для смартфона</h3>
+            <p class="product-description">Скло високої міцності для захисту екрану.</p>
+            <p class="product-price">₴250</p>
+               <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Захисне скло для смартфона">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
+        <!-- Продукт: Послуга прошивки телефону -->
+        <div class="product-card">
+            <img src="/images2/proshivka.jpg" alt="Послуга прошивки" class="product-image">
+            <h3 class="product-title">Прошивка телефону</h3>
+            <p class="product-description">Швидка та безпечна прошивка для вашого пристрою.</p>
+            <p class="product-price">₴500</p>
+              <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Прошивка телефону">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
+        <!-- Продукт: Ремонт екрану -->
+        <div class="product-card">
+            <img src="/images2/remont.jpg" alt="Ремонт екрану" class="product-image">
+            <h3 class="product-title">Ремонт екрану</h3>
+            <p class="product-description">Заміна скла чи дисплею на будь-якому телефоні.</p>
+            <p class="product-price">₴1,500</p>
+               <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Ремонт екрану">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
+        <!-- Продукт: Чохол для Samsung Galaxy -->
+        <div class="product-card">
+            <img src="/images2/sam.jpg" alt="Чохол Samsung" class="product-image">
+            <h3 class="product-title">Чохол для Samsung Galaxy S21</h3>
+            <p class="product-description">Силіконовий чохол для смартфона.</p>
+            <p class="product-price">₴350</p>
+               <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Чохол для Samsung Galaxy S21">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
+        <!-- Продукт: Аксесуари для телефону -->
+        <div class="product-card">
+            <img src="/images2/aksesuar.jpg" alt="Аксесуари" class="product-image">
+            <h3 class="product-title">Аксесуари для телефону</h3>
+            <p class="product-description">Кабелі, зарядки, блочки живлення та інше.</p>
+            <p class="product-price">₴150</p>
+             <form action="orders.php" method="POST">
+            <input type="hidden" name="type" value="service">
+            <input type="hidden" name="details" value="Аксесуари для телефону">
+            <button type="submit">Замовити</button>
+        </form>
+        </div>
     </div>
+</section>
+
 
 </body>
 </html>
