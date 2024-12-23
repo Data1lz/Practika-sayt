@@ -10,4 +10,4 @@
 
 ## Автор
 
-Проект створено [Кловатий Олександер](https://github.com/Data1lz) [Саманюк Олександер](https://github.com/OleksandrSamanuik).
+Проект створено Bekend розробник[Кловатий Олександер](https://github.com/Data1lz) Frontent Розробник[Саманюк Олександер](https://github.com/OleksandrSamanuik).
